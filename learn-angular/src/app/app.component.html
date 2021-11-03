@@ -7,14 +7,23 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <app-header></app-header>
-<mat-drawer-container class="container">
+<div class="main">
+    <app-main></app-main>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<!-- <mat-drawer-container class="container">
     <mat-drawer mode="side" opened>
         <app-main></app-main>
     </mat-drawer>
     <mat-drawer-content>
         <router-outlet></router-outlet>
     </mat-drawer-content>
-</mat-drawer-container>
+</mat-drawer-container> -->
+<app-footer></app-footer>
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->

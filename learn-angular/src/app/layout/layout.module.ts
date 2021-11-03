@@ -4,15 +4,13 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
-
-
-
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +19,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   ],
   exports: [
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
   ]
 })
 export class LayoutModule { }

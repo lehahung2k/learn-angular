@@ -8,15 +8,14 @@ import { DeleteProductComponent } from './delete-product/delete-product.componen
 import {MatTableModule} from '@angular/material/table';
 
 
-
-
 @NgModule({
   declarations: [
     ListProductComponent,
     ViewProductComponent,
     AddProductComponent,
     EditProductComponent,
-    DeleteProductComponent
+    DeleteProductComponent,
+
   ],
   imports: [
     CommonModule,

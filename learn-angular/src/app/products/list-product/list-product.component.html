@@ -1,1 +1,26 @@
-<p>list-product works!</p>
+<h2>List Products</h2>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Products</th>
+        <th scope="col">Price</th>
+        <th scope="col">Images</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of listProducts">
+        <th scope="row">{{product.pid}}</th>
+        <td>{{product.pname}}</td>
+        <td>{{product.pprice}}</td>
+        <td><img src="{{product.productimg}}" alt=""></td>
+        <td>
+            <a role="button" class="btn btn-outline-warning" href="edit/{}">Edit</a>
+            <a role="button" class="btn btn-outline-danger" href="delete/{}">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <a role="button" class="btn btn-outline-primary" href="create" >Add Products</a>

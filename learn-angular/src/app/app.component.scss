@@ -1,6 +1,17 @@
-.container {
+.main {
     width: auto;
-    height: 100%;
+    height: auto;
     margin: 10px;
-    border: 1px solid #555;
+    box-shadow: inset;
+    padding: auto;
+    border-radius: 15px;
+}
+.main .content {
+    padding: 15px;
+    background-color: antiquewhite;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+    align-content: center;
+    align-items: center;
 }

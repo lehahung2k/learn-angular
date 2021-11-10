@@ -12,5 +12,10 @@ export class ProductsService {
     listProducts() {
      return this.http.get(this.baseUrl + '/api/public/products');
   }
+
+  //POST Method: add product:
+    addProduct(productObj: any) {
+      return this.http.post(this.baseUrl + '/api/public/products', productObj);
+    }
 }
 //

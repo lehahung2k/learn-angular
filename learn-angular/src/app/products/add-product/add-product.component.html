@@ -1,1 +1,20 @@
-<p>add-product works!</p>
+<form (submit)="createProduct()">
+
+  <div class="form-group">
+    <label>Product</label>
+    <input type="text" [(ngModel)]="formModel.pname"  class="form-control" placeholder="Enter product name" name="pname">
+  </div>
+
+  <div class="form-group">
+    <label>Price</label>
+    <input type="text" [(ngModel)]="formModel.pprice" class="form-control" placeholder="Price of this product" name="pprice">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Image</label>
+    <input type="file" [(ngModel)]="formModel.productimg" class="form-control-file" name="productimg" >
+  </div>
+
+  <button role="button" type="submit" class="btn btn-primary">Submit</button>
+</form>
+  
